@@ -29,6 +29,10 @@ import java.util.*
 
 class WeatherActivity : AppCompatActivity() {
 
+    companion object{
+        private const val TAG = "WeatherActivity"
+    }
+
     val viewModel by lazy { ViewModelProvider(this).get(WeatherViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
